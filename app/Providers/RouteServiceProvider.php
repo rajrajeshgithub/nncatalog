@@ -58,9 +58,23 @@ class RouteServiceProvider extends ServiceProvider
      */
     protected function mapWebRoutes()
     {
+        $adminScope = config('app.app_scope');
+        if($adminScope == 'admin'){
+            $this->namespace = "App\Http\Controllers\BackEnd";
+            $routeFilePath = 'routes/backend.php';
+            $prefix = 'admin';
+            $path = resource_path('BackEnd/views');
+        } else {
+            $this->namespace = "App\Http\Controllers\FrontEnd";
+            $routeFilePath = 'routes/frontend.php';
+            $prefix = '';
+            $path = resource_path('FrontEnd/views');
+        }
+        view()->addLocation($path);
         Route::middleware('web')
             ->namespace($this->namespace)
-            ->group(base_path('routes/web.php'));
+            ->prefix($prefix)
+            ->group(base_path($routeFilePath));
     }
 
     /**

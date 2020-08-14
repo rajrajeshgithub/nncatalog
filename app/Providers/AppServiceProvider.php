@@ -3,7 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-
+use Illuminate\Http\Request;
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -21,8 +21,12 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot()
+    public function boot(Request $request)
     {
-        //
+       $pathArray = $request->segments();
+       $adminRoute = config('app.admin_route');
+       if(in_array($adminRoute, $pathArray)){
+           config(['app.app_scope' => 'admin']);
+       }
     }
 }

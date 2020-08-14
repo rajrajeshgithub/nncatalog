@@ -123,6 +123,10 @@ return [
 
     'cipher' => 'AES-256-CBC',
 
+    'admin_route' => 'admin',
+
+    'app_scope' => 'front',
+
     /*
     |--------------------------------------------------------------------------
     | Autoloaded Service Providers
