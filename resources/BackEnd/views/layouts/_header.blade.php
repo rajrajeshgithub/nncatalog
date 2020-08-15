@@ -13,8 +13,8 @@
         <div class="navbar-header">
 
             <!-- Start brand -->
-            <a class="navbar-brand" href="{{url('dashboard/index')}}">
-                <img class="logo" src="http://img.djavaui.com/?create=175x50,F4645F?f=ffffff" alt="brand logo"/>
+            <a id="tour-1" class="navbar-brand" href="dashboard.html">
+                <img class="logo" src="http://img.djavaui.com/?create=175x50,81B71A?f=ffffff" alt="brand logo">
             </a><!-- /.navbar-brand -->
             <!--/ End brand -->
 
@@ -40,7 +40,7 @@
             <ul class="nav navbar-nav navbar-left">
 
                 <!-- Start sidebar shrink -->
-                <li class="navbar-minimize">
+                <li id="tour-2" class="navbar-minimize">
                     <a href="javascript:void(0);" title="Minimize sidebar">
                         <i class="fa fa-bars"></i>
                     </a>
@@ -51,7 +51,7 @@
                 <li class="navbar-search">
                     <!-- Just view on mobile screen-->
                     <a href="#" class="trigger-search"><i class="fa fa-search"></i></a>
-                    <form class="navbar-form">
+                    <form id="tour-3" class="navbar-form">
                         <div class="form-group has-feedback">
                             <input type="text" class="form-control typeahead rounded" placeholder="Search for people, places and things">
                             <button type="submit" class="btn btn-theme fa fa-search form-control-feedback rounded"></button>
@@ -67,7 +67,7 @@
             <ul class="nav navbar-nav navbar-right"><!-- /.nav navbar-nav navbar-right -->
 
                 <!-- Start messages -->
-                <li class="dropdown navbar-message">
+                <li id="tour-4" class="dropdown navbar-message">
 
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope-o"></i><span class="count label label-danger rounded">7</span></a>
 
@@ -91,8 +91,8 @@
                             <!-- Start message list -->
                             <div class="media-list niceScroll">
 
-                                <a href="{{url('page/messages')}}" class="media">
-                                    <div class="pull-left"><img src="http://img.djavaui.com/?create=50x50,4888E1?f=ffffff" class="media-object img-circle" alt="John Kribo"/></div>
+                                <a href="page-messages.html" class="media">
+                                    <div class="pull-left"><img src="http://img.djavaui.com/?create=50x50,4888E1?f=ffffff" class="media-object img-circle" alt="..."/></div>
                                     <div class="media-body">
                                         <span class="media-heading">John Kribo</span>
                                         <span class="media-text">I was impressed how fast the content is loaded. Congratulations. nice design.</span>
@@ -104,8 +104,8 @@
                                     </div><!-- /.media-body -->
                                 </a><!-- /.media -->
 
-                                <a href="{{url('page/messages')}}" class="media">
-                                    <div class="pull-left"><img src="http://img.djavaui.com/?create=50x50,4888E1?f=ffffff" class="media-object img-circle" alt="Jennifer Poiyem"/></div>
+                                <a href="page-messages.html" class="media">
+                                    <div class="pull-left"><img src="http://img.djavaui.com/?create=50x50,4888E1?f=ffffff" class="media-object img-circle" alt="..."/></div>
                                     <div class="media-body">
                                         <span class="media-heading">Jennifer Poiyem</span>
                                         <span class="media-text">It’s Simple, Clean & Nice .. Good work Dear .. GLWS</span>
@@ -115,8 +115,8 @@
                                     </div><!-- /.media-body -->
                                 </a><!-- /.media -->
 
-                                <a href="{{url('page/messages')}}" class="media">
-                                    <div class="pull-left"><img src="http://img.djavaui.com/?create=50x50,4888E1?f=ffffff" class="media-object img-circle" alt="Clara Wati"/></div>
+                                <a href="page-messages.html" class="media">
+                                    <div class="pull-left"><img src="http://img.djavaui.com/?create=50x50,4888E1?f=ffffff" class="media-object img-circle" alt="..."/></div>
                                     <div class="media-body">
                                         <span class="media-heading">Clara Wati</span>
                                         <span class="media-text">Great work! Do you have any plans to add loading indicators for AJAX calls that might take longer than normal?</span>
@@ -126,8 +126,8 @@
                                     </div><!-- /.media-body -->
                                 </a><!-- /.media -->
 
-                                <a href="{{url('page/messages')}}" class="media">
-                                    <div class="pull-left"><img src="http://img.djavaui.com/?create=50x50,4888E1?f=ffffff" class="media-object img-circle" alt="Toni Mriang"/></div>
+                                <a href="page-messages.html" class="media">
+                                    <div class="pull-left"><img src="http://img.djavaui.com/?create=50x50,4888E1?f=ffffff" class="media-object img-circle" alt="..."/></div>
                                     <div class="media-body">
                                         <span class="media-heading">Toni Mriang</span>
                                         <span class="media-text">I am very interested in the theme and I’m thinking about buying it.</span>
@@ -138,8 +138,8 @@
                                     </div><!-- /.media-body -->
                                 </a><!-- /.media -->
 
-                                <a href="{{url('page/messages')}}" class="media">
-                                    <div class="pull-left"><img src="http://img.djavaui.com/?create=50x50,4888E1?f=ffffff" class="media-object img-circle" alt="Bella negoro"/></div>
+                                <a href="page-messages.html" class="media">
+                                    <div class="pull-left"><img src="http://img.djavaui.com/?create=50x50,4888E1?f=ffffff" class="media-object img-circle" alt="..."/></div>
                                     <div class="media-body">
                                         <span class="media-heading">Bella negoro</span>
                                         <span class="media-text">Great work! Good luck!</span>
@@ -151,8 +151,8 @@
                                     </div><!-- /.media-body -->
                                 </a><!-- /.media -->
 
-                                <a href="{{url('page/messages')}}" class="media">
-                                    <div class="pull-left"><img src="http://img.djavaui.com/?create=50x50,4888E1?f=ffffff" class="media-object img-circle" alt="Kim Mbako"/></div>
+                                <a href="page-messages.html" class="media">
+                                    <div class="pull-left"><img src="http://img.djavaui.com/?create=50x50,4888E1?f=ffffff" class="media-object img-circle" alt="..."/></div>
                                     <div class="media-body">
                                         <span class="media-heading">Kim Mbako</span>
                                         <span class="media-text">Hi! First of all, thank you for the very nice theme for creating awesome web applications :)</span>
@@ -163,8 +163,8 @@
                                     </div><!-- /.media-body -->
                                 </a><!-- /.media -->
 
-                                <a href="{{url('page/messages')}}" class="media">
-                                    <div class="pull-left"><img src="http://img.djavaui.com/?create=50x50,4888E1?f=ffffff" class="media-object img-circle" alt="Pack Suparman"/></div>
+                                <a href="page-messages.html" class="media">
+                                    <div class="pull-left"><img src="http://img.djavaui.com/?create=50x50,4888E1?f=ffffff" class="media-object img-circle" alt="..."/></div>
                                     <div class="media-body">
                                         <span class="media-heading">Pack Suparman</span>
                                         <span class="media-text">Apik temen kie jan template, nyong gep tuku jal..</span>
@@ -185,7 +185,7 @@
 
                         </div>
                         <div class="dropdown-footer">
-                            <a href="{{url('page/messages')}}">See All</a>
+                            <a href="page-messages.html">See All</a>
                         </div>
                     </div>
                     <!--/ End dropdown menu -->
@@ -194,7 +194,7 @@
                 <!--/ End messages -->
 
                 <!-- Start notifications -->
-                <li class="dropdown navbar-notification">
+                <li id="tour-5" class="dropdown navbar-notification">
 
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell-o"></i><span class="count label label-danger rounded">6</span></a>
 
@@ -240,7 +240,7 @@
                                 </a><!-- /.media -->
 
                                 <a href="#" class="media">
-                                    <div class="media-object pull-left"><img class="img-circle" src="http://img.djavaui.com/?create=30x30,4888E1?f=ffffff" alt=""/></div>
+                                    <div class="media-object pull-left"><img class="img-circle" src="http://img.djavaui.com/?create=30x30,4888E1?f=ffffff" alt="..."/></div>
                                     <div class="media-body">
                                         <span class="media-text">daddy pushed to project Blankon version 1.0.0</span>
                                         <!-- Start meta icon -->
@@ -289,33 +289,33 @@
                 <!--/ End notifications -->
 
                 <!-- Start profile -->
-                <li class="dropdown navbar-profile">
+                <li id="tour-6" class="dropdown navbar-profile">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <span class="meta">
-                            <span class="avatar"><img src="http://img.djavaui.com/?create=35x35,4888E1?f=ffffff" class="img-circle" alt="admin"></span>
-                            <span class="text hidden-xs hidden-sm text-muted">Tol Lee</span>
-                            <span class="caret"></span>
-                        </span>
+                                <span class="meta">
+                                    <span class="avatar"><img src="http://img.djavaui.com/?create=35x35,4888E1?f=ffffff" class="img-circle" alt="admin"></span>
+                                    <span class="text hidden-xs hidden-sm text-muted">Tol Lee</span>
+                                    <span class="caret"></span>
+                                </span>
                     </a>
                     <!-- Start dropdown menu -->
                     <ul class="dropdown-menu animated flipInX">
                         <li class="dropdown-header">Account</li>
-                        <li><a href="{{url('page/profile')}}"><i class="fa fa-user"></i>View profile</a></li>
-                        <li><a href="{{url('mail/inbox')}}"><i class="fa fa-envelope-square"></i>Inbox <span class="label label-info pull-right">30</span></a></li>
+                        <li><a href="page-profile.html"><i class="fa fa-user"></i>View profile</a></li>
+                        <li><a href="mail-inbox.html"><i class="fa fa-envelope-square"></i>Inbox <span class="label label-info pull-right">30</span></a></li>
                         <li><a href="#"><i class="fa fa-share-square"></i>Invite a friend</a></li>
                         <li class="dropdown-header">Product</li>
                         <li><a href="#"><i class="fa fa-upload"></i>Upload</a></li>
                         <li><a href="#"><i class="fa fa-dollar"></i>Earning</a></li>
                         <li><a href="#"><i class="fa fa-download"></i>Withdrawals</a></li>
                         <li class="divider"></li>
-                        <li><a href="{{url('page/signin')}}"><i class="fa fa-sign-out"></i>Logout</a></li>
+                        <li><a href="page-signin.html"><i class="fa fa-sign-out"></i>Logout</a></li>
                     </ul>
                     <!--/ End dropdown menu -->
                 </li><!-- /.dropdown navbar-profile -->
                 <!--/ End profile -->
 
                 <!-- Start settings -->
-                <li class="navbar-setting pull-right">
+                <li id="tour-7" class="navbar-setting pull-right">
                     <a href="javascript:void(0);"><i class="fa fa-cog fa-spin"></i></a>
                 </li><!-- /.navbar-setting pull-right -->
                 <!--/ End settings -->

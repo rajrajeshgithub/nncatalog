@@ -385,7 +385,7 @@
                                     <a class="theme" href="javascript:void(0);" style="background-color: #7789D1" data-toggle="tooltip" data-placement="top" data-original-title="Blueberry"><span class="hide">blueberry</span></a>
                                     <a class="theme" href="javascript:void(0);" style="background-color: #6FA362" data-toggle="tooltip" data-placement="left" data-original-title="Bud Green"><span class="hide">bud-green</span></a>
 
-                                </div>
+                                </div><!-- /.sidebar-themes -->
                             </li>
                             <!--/ End navigation - themes -->
 
@@ -541,60 +541,60 @@
                                 <!-- Start chat - contact list -->
                                 <div class="media-list">
                                     <a href="#" class="media">
-                                        <span class="media-object pull-left has-notif">
+                                        <div class="media-object pull-left has-notif">
                                             <img src="http://img.djavaui.com/?create=30x30,4888E1?f=ffffff" class="img-circle" alt="Daddy Botak">
                                             <i class="online"></i>
-                                        </span>
-                                        <span class="media-body">
+                                        </div><!-- /.media-object -->
+                                        <div class="media-body">
                                             <span class="media-heading">Daddy Botak</span>
                                             <span class="media-meta status">online</span>
                                             <span class="media-meta device"><i class="fa fa-globe"></i></span>
-                                        </span>
+                                        </div><!-- /.media-body -->
                                     </a><!-- /.media -->
                                     <a href="#" class="media">
-                                        <span class="media-object pull-left has-notif">
+                                        <div class="media-object pull-left has-notif">
                                             <img src="http://img.djavaui.com/?create=30x30,4888E1?f=ffffff" class="img-circle" alt="Sarah Tingting">
                                             <i class="offline"></i>
-                                        </span>
-                                        <span class="media-body">
+                                        </div><!-- /.media-object -->
+                                        <div class="media-body">
                                             <span class="media-heading">Sarah Tingting</span>
                                             <span class="media-meta status">offline</span>
                                             <span class="media-meta device"><i class="fa fa-globe"></i></span>
                                             <span class="media-meta time">7 m</span>
-                                        </span>
+                                        </div><!-- /.media-body -->
                                     </a><!-- /.media -->
                                     <a href="#" class="media">
-                                        <span class="media-object pull-left has-notif">
+                                        <div class="media-object pull-left has-notif">
                                             <img src="http://img.djavaui.com/?create=30x30,4888E1?f=ffffff" class="img-circle" alt="...">
                                             <i class="busy"></i>
-                                        </span>
-                                        <span class="media-body">
+                                        </div><!-- /.media-object -->
+                                        <div class="media-body">
                                             <span class="media-heading">Nicolas Olivier</span>
                                             <span class="media-meta status">busy</span>
                                             <span class="media-meta device"><i class="fa fa-mobile"></i></span>
-                                        </span>
+                                        </div><!-- /.media-body -->
                                     </a><!-- /.media -->
                                     <a href="#" class="media">
-                                        <span class="media-object pull-left has-notif">
+                                        <div class="media-object pull-left has-notif">
                                             <img src="http://img.djavaui.com/?create=30x30,4888E1?f=ffffff" class="img-circle" alt="Harry Potret">
                                             <i class="online"></i>
-                                        </span>
-                                        <span class="media-body">
+                                        </div><!-- /.media-object -->
+                                        <div class="media-body">
                                             <span class="media-heading">Harry Potret</span>
                                             <span class="media-meta status">online</span>
                                             <span class="media-meta device"><i class="fa fa-mobile"></i></span>
-                                        </span>
+                                        </div><!-- /.media-body -->
                                     </a><!-- /.media -->
                                     <a href="#" class="media">
-                                        <span class="media-object pull-left has-notif">
+                                        <div class="media-object pull-left has-notif">
                                             <img src="http://img.djavaui.com/?create=30x30,4888E1?f=ffffff" class="img-circle" alt="...">
                                             <i class="busy"></i>
-                                        </span>
-                                        <span class="media-body">
+                                        </div><!-- /.media-object -->
+                                        <div class="media-body">
                                             <span class="media-heading">Catherine Parker</span>
                                             <span class="media-meta status">busy</span>
                                             <span class="media-meta device"><i class="fa fa-mobile"></i></span>
-                                        </span>
+                                        </div><!-- /.media-body -->
                                     </a><!-- /.media -->
                                 </div><!-- /.media-list -->
                                 <!--/ End chat - contact list -->
@@ -611,61 +611,61 @@
                                 <!-- Start chat - contact list -->
                                 <div class="media-list">
                                     <a href="#" class="media">
-                                        <span class="media-object pull-left has-notif">
+                                        <div class="media-object pull-left has-notif">
                                             <img src="http://img.djavaui.com/?create=30x30,4888E1?f=ffffff" class="img-circle" alt="Jeck Joko">
                                             <i class="online"></i>
-                                        </span>
-                                        <span class="media-body">
+                                        </div><!-- /.media-object -->
+                                        <div class="media-body">
                                             <span class="media-heading">Jeck Joko</span>
                                             <span class="media-meta status">online</span>
                                             <span class="media-meta device"><i class="fa fa-globe"></i></span>
-                                        </span>
+                                        </div><!-- /.media-body -->
                                     </a><!-- /.media -->
                                     <a href="#" class="media">
-                                        <span class="media-object pull-left has-notif">
+                                        <div class="media-object pull-left has-notif">
                                             <img src="http://img.djavaui.com/?create=30x30,4888E1?f=ffffff" class="img-circle" alt="Tenny Imoet">
                                             <i class="busy"></i>
-                                        </span>
-                                        <span class="media-body">
+                                        </div><!-- /.media-object -->
+                                        <div class="media-body">
                                             <span class="media-heading">Tenny Imoet</span>
                                             <span class="media-meta status">busy</span>
                                             <span class="media-meta device"><i class="fa fa-mobile"></i></span>
-                                        </span>
+                                        </div><!-- /.media-body -->
                                     </a><!-- /.media -->
                                     <a href="#" class="media">
-                                        <span class="media-object pull-left has-notif">
+                                        <div class="media-object pull-left has-notif">
                                             <img src="http://img.djavaui.com/?create=30x30,4888E1?f=ffffff" class="img-circle" alt="Leli Madang">
                                             <i class="offline"></i>
-                                        </span>
-                                        <span class="media-body">
+                                        </div><!-- /.media-object -->
+                                        <div class="media-body">
                                             <span class="media-heading">Leli Madang</span>
                                             <span class="media-meta status">offline</span>
                                             <span class="media-meta device"><i class="fa fa-mobile"></i></span>
                                             <span class="media-meta time">2 m</span>
-                                        </span>
+                                        </div><!-- /.media-body -->
                                     </a><!-- /.media -->
                                     <a href="#" class="media">
-                                        <span class="media-object pull-left has-notif">
+                                        <div class="media-object pull-left has-notif">
                                             <img src="http://img.djavaui.com/?create=30x30,4888E1?f=ffffff" class="img-circle" alt="Rebecca Cabean">
                                             <i class="offline"></i>
-                                        </span>
-                                        <span class="media-body">
+                                        </div><!-- /.media-object -->
+                                        <div class="media-body">
                                             <span class="media-heading">Rebecca Cabean</span>
                                             <span class="media-meta status">offline</span>
                                             <span class="media-meta device"><i class="fa fa-mobile"></i></span>
                                             <span class="media-meta time">8 m</span>
-                                        </span>
+                                        </div><!-- /.media-body -->
                                     </a><!-- /.media -->
                                     <a href="#" class="media">
-                                        <span class="media-object pull-left has-notif">
+                                        <div class="media-object pull-left has-notif">
                                             <img src="http://img.djavaui.com/?create=30x30,4888E1?f=ffffff" class="img-circle" alt="...">
                                             <i class="busy"></i>
-                                        </span>
-                                        <span class="media-body">
+                                        </div><!-- /.media-object -->
+                                        <div class="media-body">
                                             <span class="media-heading">ondoel return</span>
                                             <span class="media-meta status">busy</span>
                                             <span class="media-meta device"><i class="fa fa-mobile"></i></span>
-                                        </span>
+                                        </div><!-- /.media-body -->
                                     </a><!-- /.media -->
                                 </div><!-- /.media-list -->
                                 <!--/ End chat - contact list -->
@@ -682,39 +682,39 @@
                                 <!-- Start chat - contact list -->
                                 <div class="media-list">
                                     <a href="#" class="media">
-                                        <span class="media-object pull-left has-notif">
+                                        <div class="media-object pull-left has-notif">
                                             <img src="http://img.djavaui.com/?create=30x30,4888E1?f=ffffff" class="img-circle" alt="Sishy Mawar">
                                             <i class="offline"></i>
-                                        </span>
-                                        <span class="media-body">
+                                        </div><!-- /.media-object -->
+                                        <div class="media-body">
                                             <span class="media-heading">Sishy Mawar</span>
                                             <span class="media-meta status">offline</span>
                                             <span class="media-meta device"><i class="fa fa-mobile"></i></span>
                                             <span class="media-meta time">23 m</span>
-                                        </span>
+                                        </div><!-- /.media-body -->
                                     </a><!-- /.media -->
                                     <a href="#" class="media">
-                                        <span class="media-object pull-left has-notif">
+                                        <div class="media-object pull-left has-notif">
                                             <img src="http://img.djavaui.com/?create=30x30,4888E1?f=ffffff" class="img-circle" alt="Mbah Roso">
                                             <i class="away"></i>
-                                        </span>
-                                        <span class="media-body">
+                                        </div><!-- /.media-object -->
+                                        <div class="media-body">
                                             <span class="media-heading">Mbah Roso</span>
                                             <span class="media-meta status">away</span>
                                             <span class="media-meta device"><i class="fa fa-mobile"></i></span>
                                             <span class="media-meta time">2 h</span>
-                                        </span>
+                                        </div><!-- /.media-body -->
                                     </a><!-- /.media -->
                                     <a href="#" class="media">
-                                        <span class="media-object pull-left has-notif">
+                                        <div class="media-object pull-left has-notif">
                                             <img src="http://img.djavaui.com/?create=30x30,4888E1?f=ffffff" class="img-circle" alt="...">
                                             <i class="busy"></i>
-                                        </span>
-                                        <span class="media-body">
+                                        </div><!-- /.media-object -->
+                                        <div class="media-body">
                                             <span class="media-heading">Alma Butoi</span>
                                             <span class="media-meta status">busy</span>
                                             <span class="media-meta device"><i class="fa fa-mobile"></i></span>
-                                        </span>
+                                        </div><!-- /.media-body -->
                                     </a><!-- /.media -->
                                 </div><!-- /.media-list -->
                                 <!--/ End chat - contact list -->
@@ -723,7 +723,7 @@
                         </ul><!-- /.sidebar-menu -->
                         <!-- Start right navigation - menu -->
 
-                    </div><!-- /.sidebar-setting -->
+                    </div><!-- /.sidebar-chat -->
                 </div><!-- /#sidebar-chat -->
             </div>
         </div>

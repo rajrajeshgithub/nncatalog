@@ -42,7 +42,7 @@
     <link href="{{ asset('css/BackEnd/layout.css') }}" rel="stylesheet">
     <link href="{{ asset('css/BackEnd/components.css') }}" rel="stylesheet">
     <link href="{{ asset('css/BackEnd/plugins.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/BackEnd/themes/blue-gray.theme.css') }}" rel="stylesheet" id="theme">
+    <link href="{{ asset('css/BackEnd/themes/antique-bronze.theme.css') }}" rel="stylesheet" id="theme">
     <link href="{{ asset('css/BackEnd/pages/sign.css') }}" rel="stylesheet">
     <link href="{{ asset('css/BackEnd/custom.css') }}" rel="stylesheet">
     <!--/ END THEME STYLES -->
@@ -99,7 +99,7 @@ START @BODY
 
     <!-- Brand -->
     <div class="brand">
-        <img src="http://img.djavaui.com/?create=220x100,4888E1?f=ffffff" alt="brand logo"/>
+        <img src="{{ asset('images/BackEnd/nds-logo.png') }}" alt="brand logo"/>
     </div>
     <!--/ Brand -->
 
