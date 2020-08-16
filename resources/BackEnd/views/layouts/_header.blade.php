@@ -14,7 +14,7 @@
 
             <!-- Start brand -->
             <a id="tour-1" class="navbar-brand" href="dashboard.html">
-                <img class="logo" src="http://img.djavaui.com/?create=175x50,81B71A?f=ffffff" alt="brand logo">
+                <img class="logo" src="{{ asset('images/BackEnd/nds-logo.png') }}" width="215px" alt="brand logo">
             </a><!-- /.navbar-brand -->
             <!--/ End brand -->
 
@@ -292,8 +292,9 @@
                 <li id="tour-6" class="dropdown navbar-profile">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <span class="meta">
-                                    <span class="avatar"><img src="http://img.djavaui.com/?create=35x35,4888E1?f=ffffff" class="img-circle" alt="admin"></span>
-                                    <span class="text hidden-xs hidden-sm text-muted">Tol Lee</span>
+                                    {{ dd(Auth::guard('admin')->user()) }}
+                                    <span class="avatar"><img src='{{ "https://www.gravatar.com/avatar/" . md5( strtolower( trim( Auth::guard('admin')->user()->email ) ) ) . "?s=32" }}' class="img-circle" alt="admin"></span>
+                                    <span class="text hidden-xs hidden-sm text-muted">{{ Auth::guard('admin')->user()->name }}</span>
                                     <span class="caret"></span>
                                 </span>
                     </a>
@@ -308,16 +309,17 @@
                         <li><a href="#"><i class="fa fa-dollar"></i>Earning</a></li>
                         <li><a href="#"><i class="fa fa-download"></i>Withdrawals</a></li>
                         <li class="divider"></li>
-                        <li><a href="page-signin.html"><i class="fa fa-sign-out"></i>Logout</a></li>
+                        <li><a href="{{ url('admin/logout') }}"><i class="fa fa-sign-out"></i>Logout</a></li>
                     </ul>
                     <!--/ End dropdown menu -->
                 </li><!-- /.dropdown navbar-profile -->
                 <!--/ End profile -->
 
                 <!-- Start settings -->
-                <li id="tour-7" class="navbar-setting pull-right">
+                {{--<li id="tour-7" class="navbar-setting pull-right">
                     <a href="javascript:void(0);"><i class="fa fa-cog fa-spin"></i></a>
-                </li><!-- /.navbar-setting pull-right -->
+                </li>--}}
+            <!-- /.navbar-setting pull-right -->
                 <!--/ End settings -->
 
             </ul>

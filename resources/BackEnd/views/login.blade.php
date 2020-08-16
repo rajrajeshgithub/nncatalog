@@ -96,7 +96,18 @@ START @BODY
 
 <!-- START @SIGN WRAPPER -->
 <div id="sign-wrapper">
-
+    @if(Session::has('flash_message_error'))
+        <div class="alert alert-danger alert-block text-center">
+            <button type="button" class="close" data-dismiss="alert">x</button>
+            {!! session('flash_message_error') !!}
+        </div>
+        @endif
+        @if(Session::has('flash_message_success'))
+            <div class="alert alert-success alert-block text-center">
+                <button type="button" class="close" data-dismiss="alert">x</button>
+                {!! session('flash_message_success') !!}
+            </div>
+    @endif
     <!-- Brand -->
     <div class="brand">
         <img src="{{ asset('images/BackEnd/nds-logo.png') }}" alt="brand logo"/>
@@ -104,7 +115,8 @@ START @BODY
     <!--/ Brand -->
 
     <!-- Login form -->
-    <form class="sign-in form-horizontal shadow rounded no-overflow" action="dashboard.html" method="post">
+    <form class="sign-in form-horizontal shadow rounded no-overflow" action="{{ url('admin') }}" method="post">
+        {{ csrf_field() }}
         <div class="sign-header">
             <div class="form-group">
                 <div class="sign-text">
@@ -115,7 +127,7 @@ START @BODY
         <div class="sign-body">
             <div class="form-group">
                 <div class="input-group input-group-lg rounded no-overflow">
-                    <input type="text" class="form-control input-sm" placeholder="Username or email " name="username">
+                    <input type="email" class="form-control input-sm" placeholder="Username or email " name="email">
                     <span class="input-group-addon"><i class="fa fa-user"></i></span>
                 </div>
             </div><!-- /.form-group -->

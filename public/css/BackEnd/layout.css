@@ -31,7 +31,7 @@
    04. SIDEBAR CATEGORY
    05. SIDEBAR FOOTER
    06. SIDEBAR LEFT
-   
+
  * ========================================================================
  * LAYOUT SIDEBAR RIGHT
  * ========================================================================
@@ -760,6 +760,7 @@ body.page-footer-fixed #page-content .footer-content {
 }
 .header-left .navbar-header .navbar-brand img {
   margin: 0px auto;
+    padding-top:15px;
 }
 .header-left .navbar-minimize-mobile {
   color: #FFFFFF;

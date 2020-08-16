@@ -16,12 +16,12 @@
     <div id="tour-8" class="sidebar-content">
         <div class="media">
             <a class="pull-left has-notif avatar" href="page-profile.html">
-                <img src="http://img.djavaui.com/?create=50x50,4888E1?f=ffffff" alt="admin">
+                <img src="{{ "https://www.gravatar.com/avatar/" . md5( strtolower( trim( Auth::guard()->user()->email ) ) ) . "?s=32" }}" alt="admin">
                 <i class="online"></i>
             </a>
             <div class="media-body">
-                <h4 class="media-heading">Hello, <span>Lee</span></h4>
-                <small>Web Designer</small>
+                <h4 class="media-heading">Hello, <span>{{ Auth::guard()->user()->name }}</span></h4>
+                <small>Administrator</small>
             </div>
         </div>
     </div><!-- /.sidebar-content -->
@@ -31,7 +31,7 @@
     <ul id="tour-9" class="sidebar-menu">
 
         <!-- Start navigation - dashboard -->
-        <li class="submenu active">
+        {{--<li class="submenu active">
             <a href="javascript:void(0);">
                 <span class="icon"><i class="fa fa-home"></i></span>
                 <span class="text">Dashboard</span>
@@ -48,11 +48,11 @@
                 <li><a href="dashboard-real-estate.html">Real estate</a></li>
                 <li><a href="dashboard-retail-analysis.html">Retail analysis</a></li>
             </ul>
-        </li>
+        </li>--}}
         <!--/ End navigation - dashboard -->
 
         <!-- Start navigation - frontend themes -->
-        <li class="submenu">
+        {{--<li class="submenu">
             <a href="javascript:void(0);">
                 <span class="icon"><i class="fa fa-leaf"></i></span>
                 <span class="text">Frontend themes</span>
@@ -68,27 +68,27 @@
                 </li>
                 <li><a href="frontend-themes-2.html">Multi page</a></li>
             </ul>
-        </li>
+        </li>--}}
         <!--/ End navigation - frontend themes -->
 
         <!-- Start navigation - blankon versions -->
-        <li>
+        {{--<li>
             <a href="blankon-versions.html">
                 <span class="icon"><i class="fa fa-dropbox"></i></span>
                 <span class="text">Blankon Versions</span>
             </a>
-        </li>
+        </li>--}}
         <!--/ End navigation - blankon versions -->
 
         <!-- Start category apps -->
-        <li class="sidebar-category">
+        {{--<li class="sidebar-category">
             <span>APPS</span>
             <span class="pull-right"><i class="fa fa-trophy"></i></span>
-        </li>
+        </li>--}}
         <!--/ End category apps -->
 
         <!-- Start navigation - blog -->
-        <li class="submenu">
+        {{--<li class="submenu">
             <a href="javascript:void(0);">
                 <span class="icon"><i class="fa fa-globe"></i></span>
                 <span class="text">Blog</span>
@@ -105,11 +105,11 @@
                 <li><a href="blog-list.html">List</a></li>
                 <li><a href="blog-single.html">Single</a></li>
             </ul>
-        </li>
+        </li>--}}
         <!--/ End navigation - blog -->
 
         <!-- Start navigation - mail -->
-        <li class="submenu">
+        {{--<li class="submenu">
             <a href="javascript:void(0);">
                 <span class="icon"><i class="fa fa-envelope"></i></span>
                 <span class="text">Mail</span>
@@ -139,11 +139,11 @@
                     </ul>
                 </li>
             </ul>
-        </li>
+        </li>--}}
         <!--/ End navigation - mail -->
 
         <!-- Start navigation - project -->
-        <li class="submenu">
+        {{--<li class="submenu">
             <a href="javascript:void(0);">
                 <span class="icon"><i class="fa fa-rocket"></i></span>
                 <span class="text">Project</span>
@@ -165,11 +165,11 @@
                 <li><a href="project-issue-tracker.html">Issue Tracker</a></li>
                 <li><a href="project-clients.html">Clients</a></li>
             </ul>
-        </li>
+        </li>--}}
         <!--/ End navigation - project -->
 
         <!-- Start navigation - pages -->
-        <li class="submenu">
+        {{--<li class="submenu">
             <a href="javascript:void(0);">
                 <span class="icon"><i class="fa fa-file-o"></i></span>
                 <span class="text">Pages</span>
@@ -226,18 +226,18 @@
                     </ul>
                 </li>
             </ul>
-        </li>
+        </li>--}}
         <!--/ End navigation - pages -->
 
         <!-- Start category ui kit-->
-        <li class="sidebar-category">
+        {{--<li class="sidebar-category">
             <span>UI KIT</span>
             <span class="pull-right"><i class="fa fa-magic"></i></span>
-        </li>
+        </li>--}}
         <!--/ End category ui kit-->
 
         <!-- Start navigation - forms -->
-        <li class="submenu">
+        {{--<li class="submenu">
             <a href="javascript:void(0);">
                 <span class="icon"><i class="fa fa-list-alt"></i></span>
                 <span class="text">Forms</span>
@@ -253,11 +253,11 @@
                 <li><a href="form-xeditable.html">X-Editable</a></li>
                 <li><a href="form-picker.html">Picker</a></li>
             </ul>
-        </li>
+        </li>--}}
         <!--/ End navigation - forms -->
 
         <!-- Start navigation - tables -->
-        <li class="submenu">
+        {{--<li class="submenu">
             <a href="javascript:void(0);">
                 <span class="icon"><i class="fa fa-table"></i></span>
                 <span class="text">Tables</span>
@@ -270,11 +270,11 @@
                 <li><a href="table-datatable.html">Datatable</a></li>
                 <li><a href="table-samples.html">Samples <span class="label label-danger pull-right">NEW</span></a></li>
             </ul>
-        </li>
+        </li>--}}
         <!--/ End navigation - tables -->
 
         <!-- Start navigation - maps -->
-        <li class="submenu">
+        {{--<li class="submenu">
             <a href="javascript:void(0);">
                 <span class="icon"><i class="fa fa-map-marker"></i></span>
                 <span class="text">Maps</span>
@@ -293,11 +293,11 @@
                     </ul>
                 </li>
             </ul>
-        </li>
+        </li>--}}
         <!--/ End navigation - maps -->
 
         <!-- Start navigation - charts -->
-        <li class="submenu">
+        {{--<li class="submenu">
             <a href="javascript:void(0);">
                 <span class="icon"><i class="fa fa-signal"></i></span>
                 <span class="text">Charts</span>
@@ -312,18 +312,18 @@
                 <li><a href="chart-easy-pie-chart.html">Easy Pie Chart</a></li>
                 <li><a href="chart-chartist.html">Chartist</a></li>
             </ul>
-        </li>
+        </li>--}}
         <!--/ End navigation - charts -->
 
         <!-- Start category development -->
-        <li class="sidebar-category">
+        {{--<li class="sidebar-category">
             <span>DEVELOP</span>
             <span class="pull-right"><i class="fa fa-code"></i></span>
-        </li>
+        </li>--}}
         <!--/ End category development -->
 
         <!-- Start development - ui features -->
-        <li class="submenu">
+       {{-- <li class="submenu">
             <a href="javascript:void(0);">
                 <span class="icon"><i class="fa fa-cubes"></i></span>
                 <span class="text">UI Features</span>
@@ -334,11 +334,11 @@
                 <li><a href="ui-feature-notifications.html">Notifications</a></li>
                 <li><a href="ui-feature-grid-stack.html">Grid Stack</a></li>
             </ul>
-        </li>
+        </li>--}}
         <!--/ End development - ui features -->
 
         <!-- Start development - components -->
-        <li class="submenu">
+        {{--<li class="submenu">
             <a href="javascript:void(0);">
                 <span class="icon"><i class="fa fa-cube"></i></span>
                 <span class="text">Components</span>
@@ -382,11 +382,11 @@
                 </li>
                 <li><a href="component-other.html">Other</a></li>
             </ul>
-        </li>
+        </li>--}}
         <!--/ End development - components -->
 
         <!-- Start development - layouts -->
-        <li class="submenu">
+        {{--<li class="submenu">
             <a href="javascript:void(0);">
                 <span class="icon"><i class="fa fa-columns"></i></span>
                 <span class="text">Layouts</span>
@@ -404,11 +404,11 @@
                 <li><a href="layout-sidebar-circle.html">Sidebar Circle Page</a></li>
                 <li><a href="layout-footer-fixed.html">Footer Fixed Page</a></li>
             </ul>
-        </li>
+        </li>--}}
         <!--/ End development - layouts -->
 
         <!-- Start development - sub menu -->
-        <li class="submenu">
+        {{--<li class="submenu">
             <a href="javascript:void(0);">
                 <span class="icon"><i class="fa fa-align-left"></i></span>
                 <span class="text">Sub Menu</span>
@@ -495,22 +495,22 @@
                     </a>
                 </li>
             </ul>
-        </li>
+        </li>--}}
         <!--/ End development - sub menu -->
 
         <!-- Start development - animate.css -->
-        <li>
+        {{--<li>
             <a href="animate.html">
                 <span class="icon"><i class="fa fa-forumbee"></i></span>
                 <span class="text">Animate.css</span>
                 <span class="label label-danger pull-right">New</span>
             </a>
-        </li>
+        </li>--}}
         <!--/ End development - animate.css -->
 
         <!-- Start category widget -->
         <li class="sidebar-category">
-            <span>WIDGET</span>
+            <span>CATALOG</span>
             <span class="pull-right"><i class="fa fa-cubes"></i></span>
         </li>
         <!--/ End category widget -->
@@ -519,7 +519,7 @@
         <li>
             <a href="widget-overview.html">
                 <span class="icon"><i class="fa fa-desktop"></i></span>
-                <span class="text">Overview</span>
+                <span class="text">List Catalog</span>
                 <span class="label label-primary pull-right rounded">10</span>
             </a>
         </li>
@@ -566,19 +566,19 @@
         <!--/ End widget - misc -->
 
         <!-- Start category documentation -->
-        <li class="sidebar-category">
+        {{--<li class="sidebar-category">
             <span><span class="hidden-sidebar-minimize">BLANKON</span> CORE</span>
             <span class="pull-right"><i class="fa fa-coffee"></i></span>
-        </li>
+        </li>--}}
         <!--/ End category documentation -->
 
         <!-- Start documentation - api documentation -->
-        <li>
+        {{--<li>
             <a href="../../../documentation/admin/html/full-documentation.html" target="_blank">
                 <span class="icon"><i class="fa fa-book"></i></span>
                 <span class="text">API Documentation</span>
             </a>
-        </li>
+        </li>--}}
         <!--/ End documentation - api documentation -->
 
     </ul><!-- /.sidebar-menu -->

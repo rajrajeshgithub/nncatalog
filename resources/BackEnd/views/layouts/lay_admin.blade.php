@@ -44,7 +44,7 @@
     <link href="{{ asset('css/BackEnd/layout.css') }}" rel="stylesheet">
     <link href="{{ asset('css/BackEnd/components.css') }}" rel="stylesheet">
     <link href="{{ asset('css/BackEnd/plugins.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/BackEnd/themes/default.theme.css') }}" rel="stylesheet" id="theme">
+    <link href="{{ asset('css/BackEnd/themes/blue-gray.theme.css') }}" rel="stylesheet" id="theme">
     <link href="{{ asset('css/BackEnd/custom.css') }}" rel="stylesheet">
     <!--/ END THEME STYLES -->
 
@@ -112,7 +112,7 @@ START @BODY
 
     @yield('content')
 
-    @include('layouts._sidebar_right')
+    {{--@include('layouts._sidebar_right')--}}
 
 </section><!-- /#wrapper -->
 <!--/ END WRAPPER -->
