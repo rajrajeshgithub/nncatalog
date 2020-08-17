@@ -5,6 +5,7 @@ use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticable;
 use Illuminate\Database\Eloquent\Model;
 
+
 class Admin extends Authenticable
 {
     use Notifiable;
@@ -15,4 +16,11 @@ class Admin extends Authenticable
     protected $hidden = [
         'password','remember_token'
     ];
+
+    public function catalogs()
+    {
+        return $this->hasMany(Catalog::class);
+    }
+
+
 }
