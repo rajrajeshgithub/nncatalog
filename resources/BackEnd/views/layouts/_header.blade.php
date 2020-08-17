@@ -13,7 +13,7 @@
         <div class="navbar-header">
 
             <!-- Start brand -->
-            <a id="tour-1" class="navbar-brand" href="dashboard.html">
+            <a id="tour-1" class="navbar-brand" href="{{ url('admin/dashboard') }}">
                 <img class="logo" src="{{ asset('images/BackEnd/nds-logo.png') }}" width="215px" alt="brand logo">
             </a><!-- /.navbar-brand -->
             <!--/ End brand -->
@@ -292,7 +292,6 @@
                 <li id="tour-6" class="dropdown navbar-profile">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <span class="meta">
-                                    {{ dd(Auth::guard('admin')->user()) }}
                                     <span class="avatar"><img src='{{ "https://www.gravatar.com/avatar/" . md5( strtolower( trim( Auth::guard('admin')->user()->email ) ) ) . "?s=32" }}' class="img-circle" alt="admin"></span>
                                     <span class="text hidden-xs hidden-sm text-muted">{{ Auth::guard('admin')->user()->name }}</span>
                                     <span class="caret"></span>

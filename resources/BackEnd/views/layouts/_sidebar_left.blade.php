@@ -16,11 +16,11 @@
     <div id="tour-8" class="sidebar-content">
         <div class="media">
             <a class="pull-left has-notif avatar" href="page-profile.html">
-                <img src="{{ "https://www.gravatar.com/avatar/" . md5( strtolower( trim( Auth::guard()->user()->email ) ) ) . "?s=32" }}" alt="admin">
+                <img src="{{ "https://www.gravatar.com/avatar/" . md5( strtolower( trim( Auth::guard('admin')->user()->email ) ) ) . "?s=32" }}" alt="admin">
                 <i class="online"></i>
             </a>
             <div class="media-body">
-                <h4 class="media-heading">Hello, <span>{{ Auth::guard()->user()->name }}</span></h4>
+                <h4 class="media-heading">Hello, <span>{{ Auth::guard('admin')->user()->name }}</span></h4>
                 <small>Administrator</small>
             </div>
         </div>
@@ -588,8 +588,8 @@
     <div id="tour-10" class="sidebar-footer hidden-xs hidden-sm hidden-md">
         <a id="setting" class="pull-left" href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Setting"><i class="fa fa-cog"></i></a>
         <a id="fullscreen" class="pull-left" href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Fullscreen"><i class="fa fa-desktop"></i></a>
-        <a id="lock-screen" data-url="page-signin.html" class="pull-left" href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Lock Screen"><i class="fa fa-lock"></i></a>
-        <a id="logout" data-url="page-lock-screen.html" class="pull-left" href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Logout"><i class="fa fa-power-off"></i></a>
+        <a id="lock-screen" data-url="{{ url('admin/logout') }}" class="pull-left" href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Lock Screen"><i class="fa fa-lock"></i></a>
+        <a id="logout" data-url="{{ url('admin/logout') }}" class="pull-left" href="javascript:void(0);" data-toggle="tooltip" data-placement="top" data-title="Logout"><i class="fa fa-power-off"></i></a>
     </div><!-- /.sidebar-footer -->
     <!--/ End left navigation - footer -->
 

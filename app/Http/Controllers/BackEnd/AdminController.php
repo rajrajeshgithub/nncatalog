@@ -19,9 +19,23 @@ class AdminController extends Controller
 
     public function login(Request $request)
     {
+
         if($request->isMethod('post')){
             $input = $request->all();
-            if(Auth::attempt(['email'=>$input['email'], 'password'=>$input['password'],'is_admin'=>1])){
+            //if(Auth::attempt(['email'=>$input['email'], 'password'=>$input['password'],'is_admin'=>1])){
+            /*$validatedData = $request->validate([
+                'email' => 'required|email|max:255',
+                'password' => 'required',
+            ]);*/
+            $validatedData = [
+                'email' => 'required|email|max:255',
+                'password' => 'required',
+            ];
+            $messages = [
+                'password.required'=>"The password field is required"
+            ];
+            $this->validate($request,$validatedData,$messages);
+            if(Auth::guard('admin')->attempt(['email'=>$input['email'], 'password'=>$input['password']])){
                 return redirect('admin/dashboard');
             } else {
                 return redirect('admin')->with('flash_message_error',"Invalid username or password");

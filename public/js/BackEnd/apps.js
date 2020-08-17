@@ -678,7 +678,7 @@ var BlankonApp = function(){
                 // Add sound
                 ion.sound.play('camera_flashing');
                 bootbox.dialog({
-                    message: 'Locker with notification display, Receive your notifications directly on your lock screen',
+                    message: 'Do you want to lock you account?',
                     title: 'Lock Screen',
                     className: 'modal-lilac modal-center',
                     buttons: {
@@ -701,7 +701,7 @@ var BlankonApp = function(){
                 // Add sound
                 ion.sound.play('camera_flashing');
                 bootbox.dialog({
-                    message: 'Do you want to exit from Blankon?',
+                    message: 'Do you want to logout from this panel?',
                     title: 'Logout',
                     className: 'modal-danger modal-center',
                     buttons: {

@@ -296,7 +296,7 @@ START @BODY
 
 <!-- START @PAGE LEVEL SCRIPTS -->
 <script src="{{ asset('js/BackEnd/apps.js') }}"></script>
-<script src="{{ asset('js/BackEnd/pages/blankon.dashboard.js') }}"></script>
+{{--<script src="{{ asset('js/BackEnd/pages/blankon.dashboard.js') }}"></script>--}}
 <script src="{{ asset('js/BackEnd/demo.js') }}"></script>
 <!--/ END PAGE LEVEL SCRIPTS -->
 <!--/ END JAVASCRIPT SECTION -->

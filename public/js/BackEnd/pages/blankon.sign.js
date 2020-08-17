@@ -109,7 +109,7 @@ var BlankonSign = function () {
                                 }
                             },
                         rules:{
-                            username: {
+                            email: {
                                 required: true
                             },
                             password: {
@@ -117,7 +117,7 @@ var BlankonSign = function () {
                             }
                         },
                         messages: {
-                            username: {
+                            email: {
                                 required: "Just fill anything mr awesome"
                             },
                             password: {
