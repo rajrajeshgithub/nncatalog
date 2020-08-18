@@ -517,7 +517,7 @@
 
         <!-- Start widget - overview -->
         <li>
-            <a href="widget-overview.html">
+            <a href="{{ url('admin/catalogs') }}">
                 <span class="icon"><i class="fa fa-desktop"></i></span>
                 <span class="text">List Catalog</span>
                 <span class="label label-primary pull-right rounded">10</span>

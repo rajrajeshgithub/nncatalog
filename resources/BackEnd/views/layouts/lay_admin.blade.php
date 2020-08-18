@@ -32,11 +32,7 @@
     <!--/ END GLOBAL MANDATORY STYLES -->
 
     <!-- START @PAGE LEVEL STYLES -->
-    <link href="{{ asset('global/plugins/bower_components/fontawesome/css/font-awesome.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('global/plugins/bower_components/animate.css/animate.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('global/plugins/bower_components/dropzone/downloads/css/dropzone.css') }}" rel="stylesheet">
-    <link href="{{ asset('global/plugins/bower_components/jquery.gritter/css/jquery.gritter.css') }}" rel="stylesheet">
-    <link href="{{ asset('global/plugins/bower_components/bootstrap-tour/build/css/bootstrap-tour.min.css') }}" rel="stylesheet">
+    @yield('page_css')
     <!--/ END PAGE LEVEL STYLES -->
 
     <!-- START @THEME STYLES -->
@@ -277,27 +273,7 @@ START @BODY
 <script src="{{ asset('global/plugins/bower_components/ionsound/js/ion.sound.min.js') }}"></script>
 <script src="{{ asset('global/plugins/bower_components/bootbox/bootbox.js') }}"></script>
 <!--/ END CORE PLUGINS -->
-
-<!-- START @PAGE LEVEL PLUGINS -->
-<script src="{{ asset('global/plugins/bower_components/bootstrap-session-timeout/dist/bootstrap-session-timeout.min.js') }}"></script>
-<script src="{{ asset('global/plugins/bower_components/flot/jquery.flot.js') }}"></script>
-<script src="{{ asset('global/plugins/bower_components/flot/jquery.flot.spline.min.js') }}"></script>
-<script src="{{ asset('global/plugins/bower_components/flot/jquery.flot.categories.js') }}"></script>
-<script src="{{ asset('global/plugins/bower_components/flot/jquery.flot.tooltip.min.js') }}"></script>
-<script src="{{ asset('global/plugins/bower_components/flot/jquery.flot.resize.js') }}"></script>
-<script src="{{ asset('global/plugins/bower_components/flot/jquery.flot.pie.js') }}"></script>
-<script src="{{ asset('global/plugins/bower_components/flot/jquery.flot.pie.js') }}"></script>
-<script src="{{ asset('global/plugins/bower_components/jquery.gritter/js/jquery.gritter.min.js') }}"></script>
-<script src="{{ asset('global/plugins/bower_components/skycons-html5/skycons.js') }}"></script>
-<script src="{{ asset('global/plugins/bower_components/waypoints/lib/jquery.waypoints.min.js') }}"></script>
-<script src="{{ asset('global/plugins/bower_components/counter-up/jquery.counterup.min.js') }}"></script>
-<script src="{{ asset('global/plugins/bower_components/bootstrap-tour/build/js/bootstrap-tour.min.js') }}"></script>
-<!--/ END PAGE LEVEL PLUGINS -->
-
-<!-- START @PAGE LEVEL SCRIPTS -->
-<script src="{{ asset('js/BackEnd/apps.js') }}"></script>
-{{--<script src="{{ asset('js/BackEnd/pages/blankon.dashboard.js') }}"></script>--}}
-<script src="{{ asset('js/BackEnd/demo.js') }}"></script>
+    @yield('page_js')
 <!--/ END PAGE LEVEL SCRIPTS -->
 <!--/ END JAVASCRIPT SECTION -->
 

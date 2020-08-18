@@ -11,7 +11,12 @@ use Illuminate\Support\Facades\Session;
 
 class AdminController extends Controller
 {
-    //
+
+    public function __construct()
+    {
+
+    }
+
     function index(Request $request){
 
         echo "admin";
@@ -46,6 +51,7 @@ class AdminController extends Controller
 
     public function dashboard()
     {
+
         return view('dashboard');
     }
 

@@ -6,6 +6,7 @@
 
     Route::group(['middleware'=>['admin']], function (){
         Route::get('/dashboard','AdminController@dashboard');
+        Route::resource('/catalogs','CatalogsController');
     });
 
 ?>

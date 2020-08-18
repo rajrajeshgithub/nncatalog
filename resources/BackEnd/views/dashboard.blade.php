@@ -1,4 +1,11 @@
 @extends('layouts.lay_admin')
+@section('page_css')
+    <link href="{{ asset('global/plugins/bower_components/fontawesome/css/font-awesome.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('global/plugins/bower_components/animate.css/animate.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('global/plugins/bower_components/dropzone/downloads/css/dropzone.css') }}" rel="stylesheet">
+    <link href="{{ asset('global/plugins/bower_components/jquery.gritter/css/jquery.gritter.css') }}" rel="stylesheet">
+    <link href="{{ asset('global/plugins/bower_components/bootstrap-tour/build/css/bootstrap-tour.min.css') }}" rel="stylesheet">
+@endsection
 @section('content')
     <!-- START @PAGE CONTENT -->
     <section id="page-content">
@@ -460,3 +467,25 @@
     </section><!-- /#page-content -->
     <!--/ END PAGE CONTENT -->
 @endsection
+@section('page_js')
+    <!-- START @PAGE LEVEL PLUGINS -->
+    <script src="{{ asset('global/plugins/bower_components/bootstrap-session-timeout/dist/bootstrap-session-timeout.min.js') }}"></script>
+    <script src="{{ asset('global/plugins/bower_components/flot/jquery.flot.js') }}"></script>
+    <script src="{{ asset('global/plugins/bower_components/flot/jquery.flot.spline.min.js') }}"></script>
+    <script src="{{ asset('global/plugins/bower_components/flot/jquery.flot.categories.js') }}"></script>
+    <script src="{{ asset('global/plugins/bower_components/flot/jquery.flot.tooltip.min.js') }}"></script>
+    <script src="{{ asset('global/plugins/bower_components/flot/jquery.flot.resize.js') }}"></script>
+    <script src="{{ asset('global/plugins/bower_components/flot/jquery.flot.pie.js') }}"></script>
+    <script src="{{ asset('global/plugins/bower_components/flot/jquery.flot.pie.js') }}"></script>
+    <script src="{{ asset('global/plugins/bower_components/jquery.gritter/js/jquery.gritter.min.js') }}"></script>
+    <script src="{{ asset('global/plugins/bower_components/skycons-html5/skycons.js') }}"></script>
+    <script src="{{ asset('global/plugins/bower_components/waypoints/lib/jquery.waypoints.min.js') }}"></script>
+    <script src="{{ asset('global/plugins/bower_components/counter-up/jquery.counterup.min.js') }}"></script>
+    <script src="{{ asset('global/plugins/bower_components/bootstrap-tour/build/js/bootstrap-tour.min.js') }}"></script>
+    <!--/ END PAGE LEVEL PLUGINS -->
+
+    <!-- START @PAGE LEVEL SCRIPTS -->
+    <script src="{{ asset('js/BackEnd/apps.js') }}"></script>
+    {{--<script src="{{ asset('js/BackEnd/pages/blankon.dashboard.js') }}"></script>--}}
+    <script src="{{ asset('js/BackEnd/demo.js') }}"></script>
+    @endsection
